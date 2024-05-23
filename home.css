@@ -218,6 +218,42 @@ header a:hover{
   display: flex;
 }
 
+footer {
+  background-color: var(--main);
+  height: 20%;
+  padding: 1rem 0;
+  color: var(--grey);
+}
+
+footer .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+footer .logo {
+  font-size: 4vw;
+  letter-spacing: 5px;
+  font-family: "Playfair Display SC";
+  color: var(--accent);
+}
+
+footer .footer-text {
+  font-family: "Bodoni moda";
+  color: var(--grey);
+}
+
+@media only screen and (max-width: 768px) {
+  .logo { font-size: 6vw; }
+}
+
+@media only screen and (min-width: 1050px) {
+  .logo { font-size: 3vw; }
+}
+
+
 @media only screen and (max-width: 768px) {
   .logo{font-size: 6vw;}
 }
