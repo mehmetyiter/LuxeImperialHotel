@@ -1,0 +1,289 @@
+body {
+    font-family: 'Cormorant Garamond', serif;
+}
+.main-content-wrapper {
+    background-color: #e3c3a8;
+   
+}
+
+.header {
+    background-color: #001F3F;
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .crown-icon {
+    width: 120px;
+    height: 120px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header .crown-icon:hover {
+    transform: scale(1.4);
+}
+
+.title-container {
+    display: inline-block;
+    text-align: center;
+}
+
+.header-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 84px;
+    color: #D4AF37;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.header-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 28px;
+    color: #F7E7CE;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-link {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #F7E7CE;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1.4);
+    color: #D4AF37;
+}
+
+.review-title, .award-title {
+    font-family: 'Playfair Display SC', serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.review-content, .award-content {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+    text-align: left;
+    margin: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.review-item, .award-item {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.review-image, .award-image {
+    flex: 0 0 auto;
+    width: 120px;
+    height: 200px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.review-image img, .award-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+.footer {
+    background-color: #001F3F;
+    color: #F7E7CE;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer .address, .footer .phone {
+    font-family: 'Libre Bodoni', serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer .hotel-name {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 37px;
+    color: #D4AF37;
+    margin: 0;
+}
+
+.footer .hotel-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-size: 33px;
+    color: #F7E7CE;
+    margin: 0;
+}
+
+@media (min-width: 1025px) {
+    .review-row, .award-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .review-item, .award-item {
+        width: 33.3333%;
+    }
+
+    .carousel {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-title {
+        font-size: 64px;
+    }
+    .header-subtitle {
+        font-size: 24px;
+    }
+    .footer .hotel-name {
+        font-size: 30px;
+    }
+    .footer .hotel-subtitle {
+        font-size: 24px;
+    }
+    .header .crown-icon {
+        width: 100px;
+        height: 100px;
+    }
+    .nav-link {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-title {
+        font-size: 48px;
+    }
+    .header-subtitle {
+        font-size: 18px;
+    }
+    .footer .hotel-name {
+        font-size: 24px;
+    }
+    .footer .hotel-subtitle {
+        display: none;
+    }
+    .header .crown-icon {
+        width: 80px;
+        height: 80px;
+    }
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .review-row, .award-row {
+        display: block;
+    }
+
+    .review-item, .award-item {
+        width: 100%;
+    }
+
+    .review-content, .award-content {
+        text-align: center;
+    }
+
+    .review-image, .award-image {
+        margin: 0 auto 10px;
+    }
+
+    .carousel {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-title {
+        font-size: 28px;
+    }
+    .header-subtitle {
+        font-size: 14px;
+    }
+    .footer .hotel-name {
+        display: none;
+    }
+    .footer .hotel-subtitle {
+        display: none;
+    }
+    .footer .address, .footer .phone {
+        font-size: 14px;
+    }
+    .header .crown-icon {
+        width: 50px;
+        height: 50px;
+    }
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .d-flex.align-items-center {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-control-prev, .carousel-control-next {
+        display: block;
+    }
+
+    .review-row, .award-row {
+        display: block;
+    }
+
+    .review-item, .award-item {
+        width: 100%;
+    }
+
+    .review-content, .award-content {
+        text-align: center;
+    }
+
+    .review-image, .award-image {
+        margin: 0 auto 10px;
+    }
+
+    .carousel {
+        display: block;
+    }
+}
